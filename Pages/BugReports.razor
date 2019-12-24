@@ -1,0 +1,42 @@
+﻿@page "/fetchdata"
+
+@using BlazorServerArcane.Data
+@inject WeatherForecastService ForecastService
+@{
+    var dbcontext = new BlazorServerArcane.Models.ArcaneContext();
+    var bugReports = dbcontext.BugReports.ToList();
+}
+
+<h1>Bug Reports 🐛🐞</h1>
+
+@if (bugReports == null)
+{
+    <p><em>Loading... </em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>BugID</th>
+                <th>BugLog</th>
+                <th>BugSubject</th>
+                <th>BugTime</th>
+                <th>UsrID</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in bugReports)
+            {
+                <tr>
+                    <td>@item.BugId</td>
+                    <td>@item.BugLog</td>
+                    <td>@item.BugSubject</td>
+                    <td>@item.BugTime</td>
+                    <td>@item.UsrId</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
