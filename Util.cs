@@ -1,9 +1,21 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
-public static class Util
+namespace BlazorServerArcane
 {
-    public static string ConvertToLocalTime(DateTime? dateTime)
+    public class Util
     {
-        return TimeZoneInfo.ConvertTimeFromUtc((DateTime)dateTime, TimeZoneInfo.Local).ToString("MM/dd/yyyy hh:mm tt");
+        public string ConvertToLocalTime(DateTime? dateTime)
+        {
+            return TimeZoneInfo.ConvertTimeFromUtc((DateTime)dateTime, TimeZoneInfo.Local).ToString("MM/dd/yyyy hh:mm tt");
+        }
     }
 }
