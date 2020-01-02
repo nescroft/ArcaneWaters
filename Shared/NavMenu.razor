@@ -1,0 +1,66 @@
+﻿@inject NavigationManager NavManager
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">Arcane Waters</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass" >
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="bugreports">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Bug Reports
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <select @onchange=@GoTo id="inputSelectTool" class="form-control nav-drop">
+                <option value="none">Select Tool</option>
+                <option value="CraftingTool">Crafting Tool</option>
+                <option value="AbilityTool">Ability Tool</option>
+                <option value="AchievementEditor">Achievement Editor</option>
+                <option value="LandMonsterTool">Land Monster Tool</option>
+                <option value="SeaMonsterTool">Sea Monster Tool</option>
+                <option value="ShipEditorTool">Ship Editor Tool</option>
+                <option value="NPCTool">NPC Tool</option>
+            </select>
+        </li>
+    </ul>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void GoTo(ChangeEventArgs e){
+        if(!e.Value.ToString().Equals("none")){
+            NavManager.NavigateTo(e.Value.ToString());
+        }
+    }
+   /* private string[] toolsArr = {"home", "counter","fetchdata"};
+   private int? _boundID = null;
+   private int? BoundID
+  {
+    get
+    {
+      return _boundID;
+    }
+    set
+    {
+      _boundID = value;
+      NavManager.NavigateTo(toolsArr[);
+    }
+  } */
+}
+

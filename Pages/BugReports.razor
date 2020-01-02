@@ -1,13 +1,11 @@
-﻿@page "/fetchdata"
+﻿@page "/BugReports"
 
-@using BlazorServerArcane.Data
-@inject WeatherForecastService ForecastService
 @{
-    var dbcontext = new BlazorServerArcane.Models.ArcaneContext();
+    var dbcontext = new BlazorServerArcane.Models.ebdbContext();
     var bugReports = dbcontext.BugReports.ToList();
 }
 
-<h1>Bug Reports 🐛🐞</h1>
+<h2>Bug Reports 🐛🐞</h2>
 
 @if (bugReports == null)
 {
