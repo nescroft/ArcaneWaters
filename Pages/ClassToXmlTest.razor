@@ -1,0 +1,51 @@
+﻿@page "/ClassToXmlTest"
+@using System;
+@using System.Linq;
+@using System.Xml;
+@using Models;
+@inject IJSRuntime js
+@using XmlClasses;
+@using System.Xml.Serialization;
+@using System.IO;
+
+@code{
+    private string finalText = "";
+ 
+    public void SubmitButton(){
+        /* AchievementData achievementData = new AchievementData();
+        achievementData.achievementName = "Achievement Name";
+        achievementData.actionType = "Craft";
+        achievementData.achievementDescription = "Achievement Description";
+        achievementData.count = "1";
+        achievementData.achievementUniqueID = "123";
+        achievementData.itemType = "4";
+        achievementData.itemCategory = "2";
+        achievementData.iconPath = "";
+        achievementData.tier = "1"; */
+        SeaMonsterEntityData seaMonsterEntityData = new SeaMonsterEntityData();
+        //finalText = ConvertObjectToXMLString(achievementData);
+    }
+
+    public string ConvertObjectToXMLString(object classObject){
+        string xmlString = null;
+        XmlSerializer xmlSerializer = new XmlSerializer(classObject.GetType());
+        using (MemoryStream memoryStream = new MemoryStream())
+        {
+            xmlSerializer.Serialize(memoryStream, classObject);
+            memoryStream.Position = 0;
+            xmlString = new StreamReader(memoryStream).ReadToEnd();
+        }
+        return xmlString;
+    }
+}
+
+<h2>ClassToXmlTest 🤖</h2>
+<p></p>
+<p>@finalText</p>
+<form method="post">
+
+    <input class="btn btn-secondary" @onclick="SubmitButton" type="button" value="Submit" />
+</form>
+
+
+

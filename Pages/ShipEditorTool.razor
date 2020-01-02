@@ -1,0 +1,142 @@
+@page "/ShipEditorTool"
+
+@code{
+    public void SubmitButton(){
+
+    }
+}
+
+<h2>Ship Editor Tool</h2>
+<p></p>
+<form method="post">
+<div class="form-row">
+       <div class="input-group mb-3">
+           <div class="input-group-prepend">
+               <span class="input-group-text" id="inputGroup-sizing-default">File Name:</span>
+           </div>
+           <input type="text" class="form-control" aria-label="Sizing example input"
+               aria-describedby="inputGroup-sizing-default">
+       </div>
+</div>
+<div class="form-row">
+       <p class="mr-6">Ship Type:</p>
+       <div class="form-group" id="dropdowns">
+           @* <select id="inputCraftingIngredient" class="form-control">
+               @foreach (var item in craftingItems) {
+               <option>Caravel</option>
+			   <option>Brigantine</option>
+			   <option>Carrack</option>
+			   <option>Nao</option>
+			   <option>Buss</option>
+			   <option>Galleon</option>s
+			   <option>Cutter</option>
+			   <option>Barge</option>
+               }
+           </select> *@
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">RoleType:</label>
+           <select class="form-control">
+               <option>None</option>
+               <option>LootGainTotal</option>
+               <option>Craft</option>
+               <option>LevelUp</option>
+               <option>KillLandMonster</option>
+               <option>KillSeaMonster</option>
+               <option>OpenedLootBag</option>
+               <option>CombatDie</option>
+               <option>SellItem</option>
+               <option>BuyItem</option>
+               <option>BuyShip</option>
+               <option>TalkToNPC</option>
+               <option>NPCAcquaintance</option>
+               <option>NPCCasualFriend</option>
+               <option>NPCCloseFriend</option>
+               <option>NPCBestFriend</option>
+               <option>QuestComplete</option>
+               <option>QuestDelivery</option>
+               <option>NPCGift</option>
+               <option>CannonHits</option>
+               <option>SinkedShips</option>
+               <option>SinkedShips</option>
+               <option>ShipDie</option>
+               <option>Electrocuted</option>
+               <option>Poisoned</option>
+               <option>Frozen</option>
+               <option>HitPlayerWithCannon</option>
+               <option>UsePotion</option>
+               <option>UseStatsBuff</option>
+               <option>TrashItem</option>
+               <option>WeaponBuy</option>
+               <option>ArmorBuy</option>
+               <option>HeadgearBuy</option>
+               <option>BuffSkillUse</option>
+               <option>OffensiveSkillUse</option>
+               <option>EnterCombat</option>
+               <option>JumpOnBouncePad</option>
+               <option>MineOre</option>
+               <option>OpenTreasureChest</option>
+               <option>HarvestCrop</option>
+               <option>SellCrop</option>
+               <option>WaterCrop</option>
+               <option>PlantCrop</option>
+               <option>EarnGold</option>
+               <option>GatherItem</option>
+           </select>
+       </div>
+       <div class="form-group">
+           <label for="inputCount">BaseDefense:</label>
+           <select class="form-control">
+               <option>None</option>
+               <option>LootGainTotal</option>
+               <option>Craft</option>
+               <option>LevelUp</option>
+               <option>KillLandMonster</option>
+               <option>KillSeaMonster</option>
+               <option>OpenedLootBag</option>
+               <option>CombatDie</option>
+               <option>SellItem</option>
+               <option>BuyItem</option>
+               <option>BuyShip</option>
+               <option>TalkToNPC</option>
+               <option>NPCAcquaintance</option>
+               <option>NPCCasualFriend</option>
+               <option>NPCCloseFriend</option>
+               <option>NPCBestFriend</option>
+               <option>QuestComplete</option>
+               <option>QuestDelivery</option>
+               <option>NPCGift</option>
+               <option>CannonHits</option>
+               <option>SinkedShips</option>
+               <option>SinkedShips</option>
+               <option>ShipDie</option>
+               <option>Electrocuted</option>
+               <option>Poisoned</option>
+               <option>Frozen</option>
+               <option>HitPlayerWithCannon</option>
+               <option>UsePotion</option>
+               <option>UseStatsBuff</option>
+               <option>TrashItem</option>
+               <option>WeaponBuy</option>
+               <option>ArmorBuy</option>
+               <option>HeadgearBuy</option>
+               <option>BuffSkillUse</option>
+               <option>OffensiveSkillUse</option>
+               <option>EnterCombat</option>
+               <option>JumpOnBouncePad</option>
+               <option>MineOre</option>
+               <option>OpenTreasureChest</option>
+               <option>HarvestCrop</option>
+               <option>SellCrop</option>
+               <option>WaterCrop</option>
+               <option>PlantCrop</option>
+               <option>EarnGold</option>
+               <option>GatherItem</option>
+           </select>
+       </div>
+   </div>
+
+<input class="btn btn-secondary" @onclick="SubmitButton" type="button" value="Submit" />
+</form>

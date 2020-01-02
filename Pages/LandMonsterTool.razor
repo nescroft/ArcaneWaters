@@ -1,0 +1,548 @@
+@page "/LandMonsterTool"
+
+@code{
+	public void ADDAttackSkill(){
+
+	}
+
+	public void ADDBuffSkill(){
+
+	}
+	public void ADDExistingSkill(){
+
+	}
+	public void SubmitButton(){
+
+	}
+}
+
+
+<h2>Land Monster Tool</h2>
+<p></p>
+<form method="post">
+<div class="form-row">
+       <div class="input-group mb-3">
+           <div class="input-group-prepend">
+               <span class="input-group-text" id="inputGroup-sizing-default">File Name:</span>
+           </div>
+           <input type="text" class="form-control" aria-label="Sizing example input"
+               aria-describedby="inputGroup-sizing-default">
+       </div>
+</div>
+<div class="form-row">
+       <p class="mr-6">Type:</p>
+       <div class="form-group">
+           <select class="form-control">
+               <option>Plant</option>
+               <option>Golem</option>
+               <option>Slime</option>
+               <option>GolemBoss</option>
+               <option>CoralBow</option>
+               <option>Entarcher</option>
+               <option>Flower</option>
+               <option>Muckspirit</option>
+               <option>Treeman</option>
+               <option>Lizard</option>
+               <option>Shroom</option>
+               <option>Wisp</option>
+               <option>Humanoid</option>
+           </select>
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">BaseHealth:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">BaseDefense:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">BaseDamage:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">BaseGoldReward:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">BaseExpReward:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">BaseDamagePerLevel:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">BaseDefensePerLevel:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">BaseHealthPerLevel:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">PreContact Length:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">PreMagic Length:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">BaseHealth:</label>
+           <div class="form-group">
+           <select class="form-control">
+               <option>Attack_Blunt</option>
+               <option>Attack_Fire</option>
+               <option>Battle_Intro</option>
+               <option>Battle_Outro</option>
+               <option>Blip_2</option>
+               <option>Boulder</option>
+               <option>Character_Jump</option>
+               <option>Chomper_Attack</option>
+               <option>Chomper_Death</option>
+               <option>Chomper_Hurt</option>
+               <option>Click</option>
+               <option>Clock</option>
+               <option>Clock_New</option>
+               <option>Coin_Pickup</option>
+               <option>Coin_XP_Gain</option>
+               <option>Container_Found</option>
+               <option>Container_Opened</option>
+               <option>Coralbow_Attack</option>
+               <option>Coralbow_Death</option>
+               <option>Crop_Harvest_1</option>
+               <option>Crop_Harvest_2</option>
+               <option>Crop_Harvest_3</option>
+               <option>Crop_Harvest_4</option>
+               <option>Crop_Harvest_5</option>
+               <option>Crop_plant_1</option>
+               <option>Crop_plant_2</option>
+               <option>Crop_plant_3</option>
+               <option>Crop_plant_4</option>
+               <option>Crop_plant_5</option>
+               <option>Crop_Water_1</option>
+               <option>Crop_Water_2</option>
+               <option>Crop_Water_3</option>
+               <option>Crop_Water_4</option>
+               <option>Crop_Water_5</option>
+               <option>Crusty_Small_Attack</option>
+               <option>Crusty_Small_Death</option>
+               <option>Crusty_Small_Hurt</option>
+               <option>Crusty_Titan_Attack</option>
+               <option>Crusty_Titan_Death</option>
+               <option>Crusty_Titan_Hurt</option>
+               <option>Death_Proof</option>
+			   <option>Door_Close</option>
+			   <option>Door_Close_1</option>
+			   <option>Door_Close_2</option>
+			   <option>Door_Close_3</option>
+			   <option>Door_Cloth_Close</option>
+			   <option>Door_Cloth_Open</option>
+			   <option>Door_Locked</option>
+			   <option>Door_Open</option>
+			   <option>Door_Open_1</option>
+			   <option>Door_Open_2</option>
+			   <option>Door_Open_3</option>
+			   <option>Enemy_Jump</option>
+			   <option>Ent_Attack</option>
+			   <option>Ent_Death</option>
+			   <option>Equip_1</option>
+			   <option>Equip_2</option>
+			   <option>Fishman_Attack</option>
+			   <option>Fishman_Dead</option>
+			   <option>Fishman_Hurt</option>
+			   <option>Flower_Death</option>
+			   <option>Footstep</option>
+			   <option>Footstep_Muffled</option>
+			   <option>Furnace</option>
+			   <option>Golem_Death</option>
+			   <option>Gopher_1</option>
+			   <option>Gopher_2</option>
+			   <option>Gopher_3</option>
+			   <option>GUI_Hover</option>
+			   <option>GUI_Hover_1</option>
+			   <option>GUI_Press</option>
+			   <option>GUI_Press_1</option>
+			   <option>GUI_Press_Short</option>
+			   <option>Haste</option>
+			   <option>Heal</option>
+			   <option>Hit_Fire</option>
+			   <option>Item_Pick_UP</option>
+			   <option>Ledge</option>
+			   <option>Menu_Select</option>
+			   <option>Menu_Submit</option>
+			   <option>Muckspririt_Death</option>
+			   <option>Open</option>
+			   <option>Plant_Chomp</option>
+			   <option>Poof</option>
+			   <option>Powerup</option>
+			   <option>Reef_Gaint_Attack</option>
+			   <option>Reef_Gaint_Death</option>
+			   <option>Reef_Gaint_Hurt</option>
+			   <option>Roots</option>
+			   <option>Seagulls_x1</option>
+			   <option>Seagulls_x3</option>
+			   <option>Seagulls_x6</option>
+			   <option>Seamonster_Hit</option>
+			   <option>Serpent_Attack</option>
+			   <option>Serpent_Death</option>
+			   <option>Serpent_Hurt</option>
+			   <option>Ship_Cannon_1</option>
+			   <option>Ship_Cannon_2</option>
+			   <option>Ship_Cannon_3</option>
+			   <option>Ship_Hit</option>
+			   <option>Ship_Hit_1</option>
+			   <option>Ship_Hit_2</option>
+			   <option>Ship_Hit_3</option>
+			   <option>Ship_Movement</option>
+			   <option>Silence</option>
+			   <option>Slam_Physical</option>
+			   <option>Slash_Fire</option>
+			   <option>Slash_Ice</option>
+			   <option>Slash_Lightning</option>
+			   <option>Slash_Physical</option>
+			   <option>Slime_Attack</option>
+			   <option>Slime_Death</option>
+			   <option>Slime_Hit</option>
+			   <option>Slime_Jump</option>
+			   <option>Splash_Cannon_1</option>
+			   <option>Splash_Cannon_2</option>
+			   <option>Splash_Cannon_3</option>
+			   <option>Step_Grass_1</option>
+			   <option>Step_Grass_2</option>
+			   <option>Step_Grass_3</option>
+			   <option>Step_Grass_4</option>
+			   <option>Step_Grass_5</option>
+			   <option>Step_Stone_1</option>
+			   <option>Step_Stone_2</option>
+			   <option>Step_Stone_3</option>
+			   <option>Step_Stone_4</option>
+			   <option>Step_Stone_5</option>
+			   <option>Step_Water</option>
+			   <option>Step_Wet_1</option>
+			   <option>Step_Wet_2</option>
+			   <option>Step_Wet_3</option>
+			   <option>Step_Wet_4</option>
+			   <option>Step_Wet_5</option>
+			   <option>Step_Wood_1</option>
+			   <option>Step_Wood_2</option>
+			   <option>Step_Wood_3</option>
+			   <option>Step_Wood_4</option>
+			   <option>Step_Wood_5</option>
+			   <option>Sword_Swing</option>
+			   <option>Tick</option>
+			   <option>Tock</option>
+			   <option>Treeman_Attack</option>
+			   <option>Treeman_Death</option>
+			   <option>Tutorial_Step</option>
+			   <option>UI_Buy_Sell</option>
+			   <option>UI_Hover</option>
+			   <option>Waterfall</option>
+			   <option>Web_Bounce</option>
+			   <option>Worm_Attack</option>
+			   <option>Worm_Death</option>
+			   <option>Worm_Hurt</option>
+           </select>
+			</div>
+       </div>
+       <div class="form-group">
+           <label for="inputCount">BaseDefense:</label>
+           <div class="form-group">
+           <select class="form-control">
+               <option>Attack_Blunt</option>
+               <option>Attack_Fire</option>
+               <option>Battle_Intro</option>
+               <option>Battle_Outro</option>
+               <option>Blip_2</option>
+               <option>Boulder</option>
+               <option>Character_Jump</option>
+               <option>Chomper_Attack</option>
+               <option>Chomper_Death</option>
+               <option>Chomper_Hurt</option>
+               <option>Click</option>
+               <option>Clock</option>
+               <option>Clock_New</option>
+               <option>Coin_Pickup</option>
+               <option>Coin_XP_Gain</option>
+               <option>Container_Found</option>
+               <option>Container_Opened</option>
+               <option>Coralbow_Attack</option>
+               <option>Coralbow_Death</option>
+               <option>Crop_Harvest_1</option>
+               <option>Crop_Harvest_2</option>
+               <option>Crop_Harvest_3</option>
+               <option>Crop_Harvest_4</option>
+               <option>Crop_Harvest_5</option>
+               <option>Crop_plant_1</option>
+               <option>Crop_plant_2</option>
+               <option>Crop_plant_3</option>
+               <option>Crop_plant_4</option>
+               <option>Crop_plant_5</option>
+               <option>Crop_Water_1</option>
+               <option>Crop_Water_2</option>
+               <option>Crop_Water_3</option>
+               <option>Crop_Water_4</option>
+               <option>Crop_Water_5</option>
+               <option>Crusty_Small_Attack</option>
+               <option>Crusty_Small_Death</option>
+               <option>Crusty_Small_Hurt</option>
+               <option>Crusty_Titan_Attack</option>
+               <option>Crusty_Titan_Death</option>
+               <option>Crusty_Titan_Hurt</option>
+               <option>Death_Proof</option>
+			   <option>Door_Close</option>
+			   <option>Door_Close_1</option>
+			   <option>Door_Close_2</option>
+			   <option>Door_Close_3</option>
+			   <option>Door_Cloth_Close</option>
+			   <option>Door_Cloth_Open</option>
+			   <option>Door_Locked</option>
+			   <option>Door_Open</option>
+			   <option>Door_Open_1</option>
+			   <option>Door_Open_2</option>
+			   <option>Door_Open_3</option>
+			   <option>Enemy_Jump</option>
+			   <option>Ent_Attack</option>
+			   <option>Ent_Death</option>
+			   <option>Equip_1</option>
+			   <option>Equip_2</option>
+			   <option>Fishman_Attack</option>
+			   <option>Fishman_Dead</option>
+			   <option>Fishman_Hurt</option>
+			   <option>Flower_Death</option>
+			   <option>Footstep</option>
+			   <option>Footstep_Muffled</option>
+			   <option>Furnace</option>
+			   <option>Golem_Death</option>
+			   <option>Gopher_1</option>
+			   <option>Gopher_2</option>
+			   <option>Gopher_3</option>
+			   <option>GUI_Hover</option>
+			   <option>GUI_Hover_1</option>
+			   <option>GUI_Press</option>
+			   <option>GUI_Press_1</option>
+			   <option>GUI_Press_Short</option>
+			   <option>Haste</option>
+			   <option>Heal</option>
+			   <option>Hit_Fire</option>
+			   <option>Item_Pick_UP</option>
+			   <option>Ledge</option>
+			   <option>Menu_Select</option>
+			   <option>Menu_Submit</option>
+			   <option>Muckspririt_Death</option>
+			   <option>Open</option>
+			   <option>Plant_Chomp</option>
+			   <option>Poof</option>
+			   <option>Powerup</option>
+			   <option>Reef_Gaint_Attack</option>
+			   <option>Reef_Gaint_Death</option>
+			   <option>Reef_Gaint_Hurt</option>
+			   <option>Roots</option>
+			   <option>Seagulls_x1</option>
+			   <option>Seagulls_x3</option>
+			   <option>Seagulls_x6</option>
+			   <option>Seamonster_Hit</option>
+			   <option>Serpent_Attack</option>
+			   <option>Serpent_Death</option>
+			   <option>Serpent_Hurt</option>
+			   <option>Ship_Cannon_1</option>
+			   <option>Ship_Cannon_2</option>
+			   <option>Ship_Cannon_3</option>
+			   <option>Ship_Hit</option>
+			   <option>Ship_Hit_1</option>
+			   <option>Ship_Hit_2</option>
+			   <option>Ship_Hit_3</option>
+			   <option>Ship_Movement</option>
+			   <option>Silence</option>
+			   <option>Slam_Physical</option>
+			   <option>Slash_Fire</option>
+			   <option>Slash_Ice</option>
+			   <option>Slash_Lightning</option>
+			   <option>Slash_Physical</option>
+			   <option>Slime_Attack</option>
+			   <option>Slime_Death</option>
+			   <option>Slime_Hit</option>
+			   <option>Slime_Jump</option>
+			   <option>Splash_Cannon_1</option>
+			   <option>Splash_Cannon_2</option>
+			   <option>Splash_Cannon_3</option>
+			   <option>Step_Grass_1</option>
+			   <option>Step_Grass_2</option>
+			   <option>Step_Grass_3</option>
+			   <option>Step_Grass_4</option>
+			   <option>Step_Grass_5</option>
+			   <option>Step_Stone_1</option>
+			   <option>Step_Stone_2</option>
+			   <option>Step_Stone_3</option>
+			   <option>Step_Stone_4</option>
+			   <option>Step_Stone_5</option>
+			   <option>Step_Water</option>
+			   <option>Step_Wet_1</option>
+			   <option>Step_Wet_2</option>
+			   <option>Step_Wet_3</option>
+			   <option>Step_Wet_4</option>
+			   <option>Step_Wet_5</option>
+			   <option>Step_Wood_1</option>
+			   <option>Step_Wood_2</option>
+			   <option>Step_Wood_3</option>
+			   <option>Step_Wood_4</option>
+			   <option>Step_Wood_5</option>
+			   <option>Sword_Swing</option>
+			   <option>Tick</option>
+			   <option>Tock</option>
+			   <option>Treeman_Attack</option>
+			   <option>Treeman_Death</option>
+			   <option>Tutorial_Step</option>
+			   <option>UI_Buy_Sell</option>
+			   <option>UI_Hover</option>
+			   <option>Waterfall</option>
+			   <option>Web_Bounce</option>
+			   <option>Worm_Attack</option>
+			   <option>Worm_Death</option>
+			   <option>Worm_Hurt</option>
+           </select>
+			</div>
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">Physical Defense Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">Fire Defense Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">Earth Defense Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">Wind Defense Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">Water Defense Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">All Defense Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">Physical Attack Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">Fire Attack Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">Earth Attack Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">Wind Attack Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">Water Attack Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">All Attack Multiplier:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<input class="btn btn-secondary" type="button" value="ADD" />
+<div class="form-row">
+       <p class="mr-6">Item Category:</p>
+       <div class="form-group">
+           <select class="form-control">
+               <option>Select</option>
+           </select>
+       </div>
+   </div>
+<div class="form-row">
+       <p class="mr-6">Item Type:</p>
+       <div class="form-group">
+           <select class="form-control">
+               <option>Select</option>
+               <option>Ingredient_Bark</option>
+			   <option>Ingredient_Brimstone</option>
+			   <option>Ingredient_Broken_Fang</option>
+			   <option>Ingredient_Bug_Juice</option>
+			   <option>Ingredient_Carapace</option>
+			   <option>Ingredient_Chitin</option>
+			   <option>Ingredient_Coal</option>
+			   <option>Ingredient_Ectoplasm</option>
+			   <option>Ingredient_Egg_Sac</option>
+			   <option>Ingredient_Eldritch_Aura</option>
+			   <option>Ingredient_Flint</option>
+			   <option>Ingredient_Fungal_Chunk</option>
+			   <option>Ingredient_Fur</option>
+			   <option>Ingredient_Gold_Ore</option>
+			   <option>Ingredient_Green_Blood_Droplet</option>
+			   <option>Ingredient_Green_Scale</option>
+			   <option>Ingredient_Grey_Slime</option>
+			   <option>Ingredient_Heavy_Cloth</option>
+			   <option>Ingredient_Iron_Ore</option>
+			   <option>Ingredient_Leather</option>
+			   <option>Ingredient_Light_Cloth</option>
+			   <option>Ingredient_Lizard_Claw</option>
+			   <option>Ingredient_Luminous_Powder</option>
+			   <option>Ingredient_Mandible</option>
+			   <option>Ingredient_Molted_Skin</option>
+			   <option>Ingredient_Mycelium_Fiber</option>
+			   <option>Ingredient_Onyx</option>
+			   <option>Ingredient_Polypore</option>
+			   <option>Ingredient_Sap</option>
+			   <option>Ingredient_Silk</option>
+			   <option>Ingredient_Silver_Ore</option>
+			   <option>Ingredient_Spectral_Ash</option>
+			   <option>Ingredient_Spores</option>
+			   <option>Ingredient_Thorn</option>
+			   <option>Ingredient_Toadstole_Cap</option>
+			   <option>Ingredient_Wood</option>
+			   <option>Ingredient_Wood_Louse</option>
+           </select>
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group">
+           <label for="inputCount">Min Item Count:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group">
+           <label for="inputCount">Max Item Count:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<input class="btn btn-secondary" @onclick="ADDAttackSkill" type="button" value="ADD Attack Skill" /> <input class="btn btn-secondary" @onclick="ADDBuffSkill" type="button" value="ADD Buff Skill" /> <input class="btn btn-secondary" @onclick="ADDExistingSkill" type="button" value="ADD Existing Skill" />
+<input class="btn btn-secondary" @onclick="SubmitButton" type="button" value="Submit" />
+</form>

@@ -1,0 +1,425 @@
+@page "/SeaMonsterTool"
+
+@code{
+    public void ProjectileSpawnLocations(){
+
+    }
+
+    public void Loots(){
+
+    }
+
+    public void SubmitButton(){
+
+    }
+}
+
+<h2>Sea Monster Tool</h2>
+<p></p>
+<form method="post">
+<div class="form-row">
+       <div class="input-group mb-3">
+           <div class="input-group-prepend">
+               <span class="input-group-text" id="inputGroup-sizing-default">File Name:</span>
+           </div>
+           <input type="text" class="form-control" aria-label="Sizing example input"
+               aria-describedby="inputGroup-sizing-default">
+       </div>
+</div>
+<div class="form-row">
+       <p class="mr-6">Type:</p>
+       <div class="form-group">
+           <select class="form-control">
+               <option>None</option>
+               <option>Tentacle</option>
+               <option>Horror</option>
+               <option>Worm</option>
+               <option>Reef_Giant</option>
+               <option>Fishman</option>
+           </select>
+       </div>
+   </div>
+   <div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">Drops Treasure:</label>
+           <input class="form-check-input" type="checkbox" value="">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">AnimGroup:</label>
+           <select class="form-control">
+               <option value="0">None</option>
+               <option value="1">Player</option>
+               <option value="2">Lizard</option>
+               <option value="3">Golem</option>
+               <option value="4">SeaMonster</option>
+               <option value="5">ReefGiant</option>
+               <option value="6">Tentacle</option>
+               <option value="7">Horror</option>
+               <option value="8">PlayerShip</option>
+           </select>
+       </div>
+	</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">RoleType:</label>
+           <select class="form-control">
+               <option value="0">None</option>
+               <option value="1">Standalone</option>
+               <option value="2">Minion</option>
+               <option value="3">Master</option>
+           </select>
+       </div>
+       <div class="form-group">
+           <label for="inputCount">MaxHealth:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="25">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">DefaultSprite:</label>
+           <div class="form-group">
+           <select class="form-control">
+               <option>BigSprite</option>
+               <option>BlankSprite</option>
+               <option>Boss_Horror_0</option>
+               <option>Smoak_0</option>
+               <option>Fishman_0</option>
+               <option>Fishman_Ripple_0</option>
+               <option>Horror_0</option>
+               <option>Lytning_0</option>
+               <option>Reef_Giant_0</option>
+               <option>Reef_Giant_Ripple_0</option>
+               <option>Rock_Small</option>
+               <option>RockParticle_0</option>
+               <option>Shockball_Shadow</option>
+               <option>Shockball_sm_0</option>
+               <option>Slimee_0</option>
+               <option>SlimeSheetParticle_0</option>
+               <option>SmallSlime_0</option>
+               <option>Tentacle_a_0</option>
+               <option>Tentacle_b_0</option>
+               <option>Tentacle_CollisionOnly_SpriteSheet_</option>
+               <option>Venom_0</option>
+               <option>Venom_Shadow</option>
+               <option>Worm_0</option>
+               <option>Worm_Ripple_0</option>
+           </select>
+			</div>
+       </div>
+       <div class="form-group">
+           <label for="inputCount">SecondarySprite:</label>
+           <div class="form-group">
+           <select class="form-control">
+               <option>BigSprite</option>
+               <option>BlankSprite</option>
+               <option>Boss_Horror_0</option>
+               <option>Smoak_0</option>
+               <option>Fishman_0</option>
+               <option>Fishman_Ripple_0</option>
+               <option>Horror_0</option>
+               <option>Lytning_0</option>
+               <option>Reef_Giant_0</option>
+               <option>Reef_Giant_Ripple_0</option>
+               <option>Rock_Small</option>
+               <option>RockParticle_0</option>
+               <option>Shockball_Shadow</option>
+               <option>Shockball_sm_0</option>
+               <option>Slimee_0</option>
+               <option>SlimeSheetParticle_0</option>
+               <option>SmallSlime_0</option>
+               <option>Tentacle_a_0</option>
+               <option>Tentacle_b_0</option>
+               <option>Tentacle_CollisionOnly_SpriteSheet_</option>
+               <option>Venom_0</option>
+               <option>Venom_Shadow</option>
+               <option>Worm_0</option>
+               <option>Worm_Ripple_0</option>
+           </select>
+			</div>
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">DefaultRippleTexture:</label>
+           <div class="form-group">
+           <select class="form-control">
+               <option>BigSprite</option>
+               <option>BlankSprite</option>
+               <option>Boss_Horror_0</option>
+               <option>Smoak_0</option>
+               <option>Fishman_0</option>
+               <option>Fishman_Ripple_0</option>
+               <option>Horror_0</option>
+               <option>Lytning_0</option>
+               <option>Reef_Giant_0</option>
+               <option>Reef_Giant_Ripple_0</option>
+               <option>Rock_Small</option>
+               <option>RockParticle_0</option>
+               <option>Shockball_Shadow</option>
+               <option>Shockball_sm_0</option>
+               <option>Slimee_0</option>
+               <option>SlimeSheetParticle_0</option>
+               <option>SmallSlime_0</option>
+               <option>Tentacle_a_0</option>
+               <option>Tentacle_b_0</option>
+               <option>Tentacle_CollisionOnly_SpriteSheet_</option>
+               <option>Venom_0</option>
+               <option>Venom_Shadow</option>
+               <option>Worm_0</option>
+               <option>Worm_Ripple_0</option>
+           </select>
+			</div>
+       </div>
+       <div class="form-group">
+           <label for="inputCount">DefaultRippleSprite:</label>
+           <div class="form-group">
+           <select class="form-control">
+               <option>BigSprite</option>
+               <option>BlankSprite</option>
+               <option>Boss_Horror_0</option>
+               <option>Smoak_0</option>
+               <option>Fishman_0</option>
+               <option>Fishman_Ripple_0</option>
+               <option>Horror_0</option>
+               <option>Lytning_0</option>
+               <option>Reef_Giant_0</option>
+               <option>Reef_Giant_Ripple_0</option>
+               <option>Rock_Small</option>
+               <option>RockParticle_0</option>
+               <option>Shockball_Shadow</option>
+               <option>Shockball_sm_0</option>
+               <option>Slimee_0</option>
+               <option>SlimeSheetParticle_0</option>
+               <option>SmallSlime_0</option>
+               <option>Tentacle_a_0</option>
+               <option>Tentacle_b_0</option>
+               <option>Tentacle_CollisionOnly_SpriteSheet_</option>
+               <option>Venom_0</option>
+               <option>Venom_Shadow</option>
+               <option>Worm_0</option>
+               <option>Worm_Ripple_0</option>
+           </select>
+			</div>
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">CorseSprite:</label>
+           <div class="form-group">
+           <select class="form-control">
+               <option>BigSprite</option>
+               <option>BlankSprite</option>
+               <option>Boss_Horror_0</option>
+               <option>Smoak_0</option>
+               <option>Fishman_0</option>
+               <option>Fishman_Ripple_0</option>
+               <option>Horror_0</option>
+               <option>Lytning_0</option>
+               <option>Reef_Giant_0</option>
+               <option>Reef_Giant_Ripple_0</option>
+               <option>Rock_Small</option>
+               <option>RockParticle_0</option>
+               <option>Shockball_Shadow</option>
+               <option>Shockball_sm_0</option>
+               <option>Slimee_0</option>
+               <option>SlimeSheetParticle_0</option>
+               <option>SmallSlime_0</option>
+               <option>Tentacle_a_0</option>
+               <option>Tentacle_b_0</option>
+               <option>Tentacle_CollisionOnly_SpriteSheet_</option>
+               <option>Venom_0</option>
+               <option>Venom_Shadow</option>
+               <option>Worm_0</option>
+               <option>Worm_Ripple_0</option>
+           </select>
+			</div>
+       </div>
+       <div class="form-group">
+           <label for="inputCount">MaxHealth: X:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+		   <label for="inputCount">Y:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<input class="btn btn-secondary" @onclick="ProjectileSpawnLocations" type="button" value="ADD" />
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">ScaleOverride:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="1">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">OutlineScaleOverride:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="1">
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">RippleScaleOverride:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="1">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">AnimationSpeedOverride:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="-1">
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">RippleAnimationSpeedOverride:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="-1">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">Attack Type:</label>
+           <select class="form-control">
+               <option value="0">None</option>
+               <option value="1">Cannon</option>
+               <option value="2">Ice</option>
+               <option value="3">Air</option>
+			   <option value="3">Tentacle</option>
+			   <option value="3">Venom</option>
+			   <option value="3">Boulder</option>
+			   <option value="3">Shock_Ball</option>
+			   <option value="3">Tentacle_Range</option>
+			   <option value="3">Mini_Boulder</option>
+           </select>
+       </div>
+       <div class="form-group">
+           <label for="inputCount">Is Invulnerable:</label>
+           <input class="form-check-input" type="checkbox" value="">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">IsAggressive:</label>
+           <input class="form-check-input" type="checkbox" value="">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">AutoMove:</label>
+           <input class="form-check-input" type="checkbox" value="">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">IsMelee:</label>
+           <input class="form-check-input" type="checkbox" value="">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">IsRange:</label>
+           <input class="form-check-input" type="checkbox" value="">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">MaxProjectileDistance:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="2">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">MaxMeleeDistance:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0.5">
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">MaxDistanceGap:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="3">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">Territory Radius:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="4.5">
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">DeteRadius:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="4">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">Attack Frequency:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="1">
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">ReloadDelay:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="1">
+       </div>
+       <div class="form-group">
+           <label for="inputCount">MoveFrequency:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="1">
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group mr-6">
+           <label for="inputCount">FindTargetsFrequency:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0.5">
+       </div>
+   </div>
+<input class="btn btn-secondary" @onclick="Loots" type="button" value="ADD" />
+<div class="form-row">
+       <p class="mr-6">Item Category:</p>
+       <div class="form-group">
+           <select class="form-control">
+               <option>Select</option>
+           </select>
+       </div>
+   </div>
+<div class="form-row">
+       <p class="mr-6">Item Type:</p>
+       <div class="form-group">
+           <select class="form-control">
+               <option>Select</option>
+               <option>Ingredient_Bark</option>
+			   <option>Ingredient_Brimstone</option>
+			   <option>Ingredient_Broken_Fang</option>
+			   <option>Ingredient_Bug_Juice</option>
+			   <option>Ingredient_Carapace</option>
+			   <option>Ingredient_Chitin</option>
+			   <option>Ingredient_Coal</option>
+			   <option>Ingredient_Ectoplasm</option>
+			   <option>Ingredient_Egg_Sac</option>
+			   <option>Ingredient_Eldritch_Aura</option>
+			   <option>Ingredient_Flint</option>
+			   <option>Ingredient_Fungal_Chunk</option>
+			   <option>Ingredient_Fur</option>
+			   <option>Ingredient_Gold_Ore</option>
+			   <option>Ingredient_Green_Blood_Droplet</option>
+			   <option>Ingredient_Green_Scale</option>
+			   <option>Ingredient_Grey_Slime</option>
+			   <option>Ingredient_Heavy_Cloth</option>
+			   <option>Ingredient_Iron_Ore</option>
+			   <option>Ingredient_Leather</option>
+			   <option>Ingredient_Light_Cloth</option>
+			   <option>Ingredient_Lizard_Claw</option>
+			   <option>Ingredient_Luminous_Powder</option>
+			   <option>Ingredient_Mandible</option>
+			   <option>Ingredient_Molted_Skin</option>
+			   <option>Ingredient_Mycelium_Fiber</option>
+			   <option>Ingredient_Onyx</option>
+			   <option>Ingredient_Polypore</option>
+			   <option>Ingredient_Sap</option>
+			   <option>Ingredient_Silk</option>
+			   <option>Ingredient_Silver_Ore</option>
+			   <option>Ingredient_Spectral_Ash</option>
+			   <option>Ingredient_Spores</option>
+			   <option>Ingredient_Thorn</option>
+			   <option>Ingredient_Toadstole_Cap</option>
+			   <option>Ingredient_Wood</option>
+			   <option>Ingredient_Wood_Louse</option>
+           </select>
+       </div>
+   </div>
+<div class="form-row">
+       <div class="form-group">
+           <label for="inputCount">Min Item Count:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<div class="form-row">
+       <div class="form-group">
+           <label for="inputCount">Max Item Count:</label>
+           <input type="number" class="form-control" id="inputNumber" placeholder="0">
+       </div>
+</div>
+<input class="btn btn-secondary" @onclick="SubmitButton" type="button" value="Submit" />
+</form>
